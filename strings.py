@@ -14,27 +14,19 @@ def is_palindrome(text):
 
 
 def is_palindrome_iterative(text):
-    #mirrored strings test passed
-    #non-palindromic tests passed
-    #mixed casing test passed
-    #white space test passed
-    #white space and mixed casing test passed
-    #white space and punctuation test passed
-    #white space, mixed casing, and punctuation test passed
     letters = text.replace(" ", "").lower()
     delete = '!()-[]{};:"\,<>./?@#$%^&*_~\x80\x98\x99\x94\''
     letter_array = []
     for letter in letters:
         if letter not in delete:
             letter_array.append(letter)
-    print letter_array
 
-    first = 0
-    last = len(letter_array)-1
-    while first<=last:
-        if letter_array[first] == letter_array[last]:
-            first = first + 1
-            last = last - 1
+    left = 0
+    right = len(letter_array)-1
+    while left<=right:
+        if letter_array[left] == letter_array[right]:
+            left = left + 1
+            right = right - 1
         else:
             return False
     return True
@@ -42,11 +34,16 @@ def is_palindrome_iterative(text):
 
 
 def is_palindrome_recursive(text, left=None, right=None):
-    # TODO: implement the is_palindrome function recursively here
-    pass
-    # once implemented, change is_palindrome to call is_palindrome_recursive
-    # to verify that your iterative implementation passes all tests
+    letters = text.replace(" ", "").lower()
+    delete = '!()-[]{};:"\,<>./?@#$%^&*_~\x80\x98\x99\x94\''
+    letter_array = []
+    for letter in letters:
+        if letter not in delete:
+            letter_array.append(letter)
 
+    if left is None and right is None:
+        left = 0
+        right = len(letter_array)-1
 
 def main():
     import sys

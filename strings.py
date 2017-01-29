@@ -16,12 +16,12 @@ def is_palindrome(text):
 def is_palindrome_iterative(text):
     #mirrored strings test passed
     #non-palindromic tests passed
+    #mixed casing test passed
     letter_array = []
     first = 0
     last = len(text)-1
     for letter in text:
-        letter = letter.lower()
-        letter_array.append(letter)
+        letter_array.append(letter.lower())
     print letter_array
 
     first = 0

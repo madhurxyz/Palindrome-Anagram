@@ -41,7 +41,7 @@ class StringsTest(unittest.TestCase):
         assert is_palindrome('race, car!!') is True
         assert is_palindrome('race fast, safe car.') is True
 
-    def DISABLED_test_is_palindrome_with_mixed_casing_and_punctuation(self):
+    def test_is_palindrome_with_mixed_casing_and_punctuation(self):
         # palindromes with whitespace, punctuation and mixed letter casing
         assert is_palindrome('Race fast, safe car.') is True
         assert is_palindrome('Was it a car or a cat I saw?') is True

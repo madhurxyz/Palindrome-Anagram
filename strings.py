@@ -20,8 +20,9 @@ def is_palindrome_iterative(text):
     #white space test passed
     #white space and mixed casing test passed
     #white space and punctuation test passed
+    #white space, mixed casing, and punctuation test passed
     letters = text.replace(" ", "").lower()
-    delete = '!()-[]{};:"\,<>./?@#$%^&*_~\x80\x98\x99\x94'
+    delete = '!()-[]{};:"\,<>./?@#$%^&*_~\x80\x98\x99\x94\''
     letter_array = []
     for letter in letters:
         if letter not in delete:

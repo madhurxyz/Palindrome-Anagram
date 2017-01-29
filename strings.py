@@ -20,6 +20,7 @@ def is_palindrome_iterative(text):
     first = 0
     last = len(text)-1
     for letter in text:
+        letter = letter.lower()
         letter_array.append(letter)
     print letter_array
 

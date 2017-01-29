@@ -6,7 +6,7 @@ import unittest
 
 class StringsTest(unittest.TestCase):
 
-    def test_is_palindrome_with_mirrored_strings(self):
+    def DISABLED_test_is_palindrome_with_mirrored_strings(self):
         # simple palindromes that are mirrored strings
         assert is_palindrome('') is True  # base case
         assert is_palindrome('A') is True  # base case
@@ -16,7 +16,7 @@ class StringsTest(unittest.TestCase):
         assert is_palindrome('radar') is True
         assert is_palindrome('racecar') is True
 
-    def DISABLED_test_is_palindrome_with_mixed_casing(self):
+    def test_is_palindrome_with_mixed_casing(self):
         # palindromes with mixed leter casing
         assert is_palindrome('Bb') is True
         assert is_palindrome('NoOn') is True

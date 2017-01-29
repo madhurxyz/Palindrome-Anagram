@@ -46,10 +46,14 @@ def is_palindrome_recursive(text, left=None, right=None):
         left = 0
         right = len(letters)-1
 
-    if letters[left] == letters[right]:
+    if len(letters) <= 1:
         return True
-    else:
-        return is_palindrome_recursive(letters, left + 1, right - 1)
+
+    if left < right and right > 0:
+        if letters[left] == letters[right]:
+            return True
+        else:
+            return is_palindrome_recursive(letters, left + 1, right - 1)
 
     return False
 

@@ -17,6 +17,8 @@ def is_palindrome_iterative(text):
     #mirrored strings test passed
     #non-palindromic tests passed
     #mixed casing test passed
+    #white space test passed
+    #white space and mixed casing test passed
     letters = text.replace(" ", "").lower()
     letter_array = []
     for letter in letters:

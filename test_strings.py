@@ -23,13 +23,13 @@ class StringsTest(unittest.TestCase):
         assert is_palindrome('Radar') is True
         assert is_palindrome('RaceCar') is True
 
-    def test_is_palindrome_with_whitespace(self):
+    def DISABLED_test_is_palindrome_with_whitespace(self):
         # palindromes with whitespace
         assert is_palindrome('taco cat') is True
         assert is_palindrome('race car') is True
         assert is_palindrome('race fast safe car') is True
 
-    def DISABLED_test_is_palindrome_with_whitespace_and_mixed_casing(self):
+    def test_is_palindrome_with_whitespace_and_mixed_casing(self):
         # palindromes with whitespace and mixed letter casing
         assert is_palindrome('Taco Cat') is True
         assert is_palindrome('Race Car') is True

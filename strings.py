@@ -14,10 +14,13 @@ def is_palindrome(text):
 
 
 def is_palindrome_iterative(text):
-    # TODO: implement the is_palindrome function iteratively here
-    pass
-    # once implemented, change is_palindrome to call is_palindrome_iterative
-    # to verify that your iterative implementation passes all tests
+    letter_array = []
+    first = 0
+    last = len(text)-1
+    for letter in text:
+        letter_array.append(letter)
+    print letter_array
+
 
 
 def is_palindrome_recursive(text, left=None, right=None):

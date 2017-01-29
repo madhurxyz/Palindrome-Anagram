@@ -14,6 +14,8 @@ def is_palindrome(text):
 
 
 def is_palindrome_iterative(text):
+    #mirrored strings test passed
+    #non-palindromic tests passed
     letter_array = []
     first = 0
     last = len(text)-1

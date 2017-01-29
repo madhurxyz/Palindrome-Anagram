@@ -2,7 +2,8 @@
 
 import string
 
-
+#Worst Case: O(n/2)
+#Best Case: Omega(1)
 def is_palindrome(text):
     """A string of characters is a palindrome if it reads the same forwards and
     backwards, ignoring punctuation, whitespace, and letter casing"""
@@ -49,7 +50,7 @@ def is_palindrome_recursive(text, left=None, right=None):
     if len(letters) <= 1:
         return True
 
-    if left < right and right > 0:
+    if left < right:
         if letters[left] == letters[right]:
             return True
         else:

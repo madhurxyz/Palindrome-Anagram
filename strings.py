@@ -17,23 +17,25 @@ def is_palindrome_iterative(text):
     #mirrored strings test passed
     #non-palindromic tests passed
     #mixed casing test passed
-    letter_array = []
-    first = 0
-    last = len(text)-1
-    for letter in text:
-        letter_array.append(letter.lower())
-    print letter_array
+    # letter_array = []
+    # first = 0
+    # last = len(text)-1
+    # for letter in text:
+    #     letter_array.append(letter.lower())
+    # print letter_array
+    letters = text.replace(" ", "")
+    print letters
 
-    first = 0
-    last = len(text)-1
-    while first<=last:
-        if letter_array[first] == letter_array[last]:
-            first = first + 1
-            last = last - 1
-        else:
-            return False
-
-    return True
+    # first = 0
+    # last = len(text)-1
+    # while first<=last:
+    #     if letter_array[first] == letter_array[last]:
+    #         first = first + 1
+    #         last = last - 1
+    #     else:
+    #         return False
+    #
+    # return True
 
 
 

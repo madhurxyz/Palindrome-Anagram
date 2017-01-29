@@ -1,1 +1,4 @@
-{}
+{
+  "test_strings.py::StringsTest::test_is_palindrome_with_mirrored_strings": true, 
+  "test_strings.py::StringsTest::test_is_palindrome_with_non_palindromic_strings": true
+}

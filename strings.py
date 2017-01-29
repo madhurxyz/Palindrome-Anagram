@@ -23,9 +23,17 @@ def is_palindrome_iterative(text):
     # for letter in text:
     #     letter_array.append(letter.lower())
     # print letter_array
-    letters = text.replace(" ", "")
-    print letters
-
+    letters = text.replace(" ", "").lower()
+    first = 0
+    last = len(text)-1
+    letter_array = []
+    while first<=last:
+        if letter_array[first] == letter_array[last]:
+            first = first + 1
+            last = last - 1
+        else:
+            return False
+    return True
     # first = 0
     # last = len(text)-1
     # while first<=last:

@@ -21,6 +21,17 @@ def is_palindrome_iterative(text):
         letter_array.append(letter)
     print letter_array
 
+    first = 0
+    last = len(text)-1
+    while first<=last:
+        if letter_array[first] == letter_array[last]:
+            first = first + 1
+            last = last - 1
+        else:
+            return False
+
+    return True
+
 
 
 def is_palindrome_recursive(text, left=None, right=None):

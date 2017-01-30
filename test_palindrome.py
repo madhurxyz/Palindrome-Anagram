@@ -1,6 +1,6 @@
 #!python
 
-from strings import is_palindrome
+from palindrome import is_palindrome
 import unittest
 
 

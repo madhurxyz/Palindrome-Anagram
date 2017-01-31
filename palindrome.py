@@ -2,7 +2,7 @@
 
 import string
 
-#Worst Case: O(n/2)
+#Worst Case: O(n/2) => O(n)
 #Best Case: Omega(1)
 def is_palindrome(text):
     """A string of characters is a palindrome if it reads the same forwards and
@@ -12,6 +12,7 @@ def is_palindrome(text):
     assert isinstance(text, str)
     return is_palindrome_iterative(text)
     # return is_palindrome_recursive(text)
+
 def clean(text):
     new_text = text.replace(" ", "").lower()
     delete = '!()-[]{};:"\,<>./?@#$%^&*_~\x80\x98\x99\x94\''
